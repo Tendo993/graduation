@@ -1,0 +1,182 @@
+.header
+  background: linear-gradient(to right, #ffffff 59.2%, #f1f1f1 40.8%)
+  &-block
+    padding-top: 8px
+    padding-bottom: 3px
+    display: flex
+    align-items: center
+  &-logo
+    display: inline-block
+    flex-basis: 50px
+  &-burger-menu
+    display: none
+  &-navbar
+    display: flex
+    padding-left: 71px
+    height: 24px
+    flex-basis: 60.8%
+    justify-content: space-around
+    &-items
+      display: flex
+      justify-content: space-between
+      width: 511px
+      font-size: 16px
+    &__item
+      display: inline-block
+      position: relative
+      text-decoration: none
+      color: #000000
+      letter-spacing: -0.1px
+      +semi
+      &:before
+        display: inline-block
+        position: absolute
+        content: ''
+        width: 1px
+        height: 12px
+        left: -28px
+        top: 4px
+        opacity: 0.15
+        background-color: #000000
+      &:first-child
+        &:before
+          display: none
+      &:nth-child(2)
+        &:before
+          left: -32px
+      &:nth-child(3)
+        &:before
+          left: -30px
+      &:nth-child(5)
+        &:before
+          left: -29px
+      &:hover
+        color: $navbar-hover-color
+        &:after
+          content: ''
+          display: block
+          height: 1px
+          background-color: $navbar-hover-color
+  &-contacts
+    flex-basis: 34.95%
+    // width: 411px
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    &__img
+      display: inline-block
+      // margin-left: 54px
+      margin-right: 7px
+  &-tel
+    display: inline-block
+    margin-right: 42px
+    &__number
+      display: inline-block
+      padding-bottom: 5px
+      letter-spacing: 0.05px
+      +bold
+      font-size: 17.5px
+      letter-spacing: 0px
+    &__code
+      +reg
+  &-btn
+    display: inline-block
+    padding: 8px 15px 6px 15px
+    margin-bottom: 2px
+    color: #000000
+    font-size: 14px
+    +semi
+@media (max-width: 1200px)
+  .header
+    &-block
+      justify-content: space-between
+    &-logo
+    &-navbar
+      flex-basis: 49%
+      justify-content: space-around
+      padding-left: 0
+      &-items
+        width: 400px
+      &__item
+        &:before
+          display: none
+    &-contacts
+      flex-basis: 40%
+@media (max-width: 992px)
+  .header
+    background: #ffffff
+    &-block
+    &-navbar
+      flex-basis: fill
+      &-items
+        width: 330px
+    &-contacts
+      flex-basis: auto
+      &__img
+        display: none
+    &-tel
+      display: none
+      &__number
+        font-size: 14px
+@media (max-width: 768px)
+  .header
+    &-navbar
+      &__item
+        &:hover
+          color: #000000
+          &:after
+            display: none
+@media (max-width: 576px)
+  .header
+    &-block
+      position: relative
+    &-navbar
+      display: none
+      position: absolute
+      width: 100%
+      height: 240px
+      padding: 20px 0px
+      top: 95px
+      left: 0
+      border-top: 1px solid gray
+      &-items
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-around
+        height: 200px
+      &__item   
+    &-logo
+    &-burger-menu
+      display: block
+      width: 80px
+      height: 40px
+      position: relative
+      border: 1px solid gray
+      border-radius: 8px
+      span, span:before, span:after
+        position: absolute
+        top: 50%
+        margin-top: -1px
+        left: 50%
+        margin-left: -15px
+        width: 30px
+        height: 2px
+        background-color: #222
+      span:before, span:after
+        content: ''
+        display: block
+        transition: 0.5s
+      span:before
+        transform: translateY(-5px)
+      span:after
+        transform: translateY(5px)
+  .burger-menu_active
+    span
+      height: 0
+    span:before
+      transform: rotate(45deg)
+    span:after
+      transform: rotate(-45deg)
+  .navbar_active
+    display: flex
