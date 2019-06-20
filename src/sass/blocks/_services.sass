@@ -1,0 +1,152 @@
+.services
+  background-color: $services-bg-color
+  margin-bottom: 143px
+  &-block
+    position: relative
+    display: flex
+    flex-wrap: wrap
+    padding-top: 104px
+    padding-bottom: 96px
+    justify-content: space-between
+  &-label
+    position: absolute
+    top: -30px
+    left: -32px
+    font-size: 28px
+    text-transform: uppercase
+    padding: 14px 65px 14px 69px
+    color: $services-label-text
+    background-color: $services-label-bg
+    +semi
+.service
+  position: relative
+  width: 377px
+  height: 236px
+  margin-bottom: 21px
+  padding-top: 41px
+
+  -webkit-filter: grayscale(100%)
+  -moz-filter: grayscale(100%)
+  -ms-filter: grayscale(100%)
+  -o-filter: grayscale(100%)
+  filter: grayscale(100%)
+  filter: url(grayscale.svg#greyscale)
+  filter: gray
+  -webkit-filter: grayscale(1)
+  &:hover
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: none
+    -webkit-filter: grayscale(0);
+  +reg
+  &:nth-child(3n+1)
+    background-image: url('../img/services/service-3.png')
+    .service-title
+      padding-left: 6px
+  &:nth-child(3n+2)
+    background-image: url('../img/services/service-1.png')
+  &:nth-child(3n+3)
+    background-image: url('../img/services/service-2.png')
+    .service-title
+      padding-left: 8px
+    .service-btn
+      left: 119px
+  &-title
+    display: block
+    font-size: 20px
+    color: $service-title-color
+    opacity: 0.8
+    line-height: 26px
+    margin-bottom: 43px
+    text-align: center
+    letter-spacing: -0.4px
+  &-btn
+    position: absolute
+    display: inline-block
+    text-decoration: none
+    text-transform: uppercase
+    margin-left: auto
+    margin-right: auto
+    padding: 8px 20px 8px 20px
+    bottom: 68px
+    left: 120px
+    font-size: 14.5px
+    color: $service-btn-text
+    background-color: $service-btn-bg
+    font-weight: 600
+  &-description
+    display: none
+    font-size: 20px
+    color: $service-desctiption
+    opacity: 0.8
+    line-height: 26px
+    margin-bottom: 43px
+    text-align: center
+    letter-spacing: -0.4px
+  &-price-btn
+    position: absolute
+    display: none
+    text-decoration: none
+    text-transform: uppercase
+    margin-left: auto
+    margin-right: auto
+    padding: 8px 20px 8px 20px
+    bottom: 68px
+    left: 135px
+    font-size: 14.5px
+    color: $service-price-btext
+    background-color: $service-price-bbg
+    font-weight: 600
+@media (max-width: 1200px)
+  .services
+    &-block
+      padding-left: 50px
+      padding-right: 50px
+    &-label
+      left: 50px
+@media (max-width: 992px)
+  .services
+    &-block
+      padding-left: 0
+      padding-right: 0
+  .service
+    width: 355px
+    &:nth-child(3n+3)
+      .service-btn
+        left: 110px
+      .service-title
+        padding-left: 10px
+        padding-right: 10px
+    &:nth-child(3n+1)
+      .service-title
+        padding-left: 10px
+        padding-right: 10px
+    &-btn
+      left: 110px
+    &-title
+      font-size: 18px
+      line-height: 22px
+      padding-left: 10px
+      padding-right: 10px
+    &-price-btn
+      left: 125px
+@media (max-width: 768px)
+  .services
+    &-block
+      justify-content: center
+@media (max-width: 576px)
+  .services
+    &-label
+      font-size: 18px
+  .service
+    max-width: 305px
+    width: 100%
+    &:nth-child(3n+3)
+      .service-btn
+        left: 86px
+    &-btn
+      left: 86px
+    &-price-btn
+      left: 102px

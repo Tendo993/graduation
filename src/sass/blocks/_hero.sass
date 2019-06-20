@@ -1,0 +1,139 @@
+.hero
+  margin-bottom: 133px
+  &-slider
+    &__item
+      height: 742px
+      width: 100vw
+      background-image:  url('../img/hero/slider-bg_2.png'), linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))
+      background-size: cover
+      &:nth-child(2)
+        background-image:  url('../img/hero/slider-bg_1.png'), linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))
+      &:nth-child(3)
+        background-image:  url('../img/hero/slider-bg_3.png'), linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)) 
+      &:nth-child(4)
+        background-image:  url('../img/hero/slider-bg_4.png'), linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))
+.slide
+  max-width: 1170px
+  margin-left: auto
+  margin-right: auto
+  padding-top: 204px
+  &-title
+    color: darken($hero-slide-title, 2%) 
+    text-transform: uppercase
+    +semi
+    font-size: 35px
+    margin-top: 0
+    margin-bottom: 11px
+    letter-spacing: 0.1px
+    margin-left: -3px
+    font-stretch: ultra-condensed
+    // max-width: 925px
+  &-subtitle
+    color: darken($hero-slide-subtitle, 10%)
+    font-size: 35px
+    margin-top: 0
+    margin-bottom: 25px
+    margin-left: -2px
+    +reg
+  &-text
+    display: block
+    color: darken($hero-slide-text, 60%)
+    font-size: 20px
+    max-width: 1110px
+    margin-bottom: 50px
+    line-height: 28px
+    margin-left: -2px
+    letter-spacing: -0.1px
+    +reg
+  &-btn
+    display: inline-block
+    text-decoration: none
+    text-transform: uppercase
+    font-size: 18px
+    color: $hero-slide-btext
+    background-color: $hero-slide-bbg
+    padding: 11px 38px 12px 38px
+    // letter-spacing: -0.2px
+    +semi
+.slick-dotted.slick-slider
+  margin-bottom: 0px
+.slick-dots
+  bottom: 45px
+  li
+    button
+      padding: 0
+      background-color: $hero-slide-dot
+      &:before
+        color: $hero-slide-dot
+    &.slick-active button:before
+      background-color: $hero-slide-dactive
+      color: $hero-slide-dactive
+@media (max-width: 1200px)
+  .hero
+    &-slider
+      &__item
+        height: 540px
+        
+  .slide
+    margin-left: 5%
+    margin-right: 5%
+    padding-top: 170px
+    &-title
+      font-size: 30px
+      max-width: 800px
+    &-subtitle
+      font-size: 30px
+      max-width: 800px
+    &-text
+      max-width: 770px
+  .slick-dots
+    bottom: 25px
+@media (max-width: 992px)
+  .hero
+    &-slider
+      &__item
+        height: 480px
+  .slide
+    &-title
+      font-size: 22px
+      max-width: 585px
+    &-subtitle
+      font-size: 22px
+      margin-bottom: 15px
+      max-width: 585px
+    &-text
+      font-size: 16px
+      line-height: 20px
+      max-width: 555px
+      margin-bottom: 35px
+  .slick-dots
+    bottom: 10px
+@media (max-width: 768px)
+  .hero
+    &-slider
+      &__item
+        height: 420px
+  .slide
+    padding-top: 100px
+    &-title
+      max-width: 450px
+    &-subtitle
+      max-width: 450px
+    &-text
+      max-width: 420px
+@media (max-width: 576px)
+  .slide
+    padding-top: 100px
+    &-title
+      font-size: 16px
+      max-width: 290px
+    &-subtitle
+      font-size: 16px
+      max-width: 290px
+    &-text
+      font-size: 14px
+      max-width: 290px
+      line-height: 16px
+      margin-bottom: 25px
+    &-btn
+      margin-left: 55px
