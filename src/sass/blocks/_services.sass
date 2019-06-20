@@ -24,7 +24,6 @@
   height: 236px
   margin-bottom: 21px
   padding-top: 41px
-
   -webkit-filter: grayscale(100%)
   -moz-filter: grayscale(100%)
   -ms-filter: grayscale(100%)
@@ -34,12 +33,12 @@
   filter: gray
   -webkit-filter: grayscale(1)
   &:hover
-    -webkit-filter: grayscale(0%);
-    -moz-filter: grayscale(0%);
-    -ms-filter: grayscale(0%);
-    -o-filter: grayscale(0%);
+    -webkit-filter: grayscale(0%)
+    -moz-filter: grayscale(0%)
+    -ms-filter: grayscale(0%)
+    -o-filter: grayscale(0%)
     filter: none
-    -webkit-filter: grayscale(0);
+    -webkit-filter: grayscale(0)
   +reg
   &:nth-child(3n+1)
     background-image: url('../img/services/service-3.png')
@@ -112,7 +111,15 @@
       padding-left: 0
       padding-right: 0
   .service
+    // -webkit-filter: grayscale(0%)
+    // -moz-filter: grayscale(0%)
+    // -ms-filter: grayscale(0%)
+    // -o-filter: grayscale(0%)
+    // filter: none
+    // -webkit-filter: grayscale(0)
     width: 355px
+    &:hover
+      display: none
     &:nth-child(3n+3)
       .service-btn
         left: 110px
@@ -141,7 +148,7 @@
     &-label
       font-size: 18px
   .service
-    max-width: 305px
+    max-width: 304px
     width: 100%
     &:nth-child(3n+3)
       .service-btn

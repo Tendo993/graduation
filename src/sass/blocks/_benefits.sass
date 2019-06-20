@@ -1,0 +1,195 @@
+.benefits
+  display: flex
+  margin-bottom: 142px
+  &-label
+    position: absolute
+    background-color: $benefits-label-bg
+    color: $benefits-label-text
+    left: 343px
+    top: -27px
+    padding: 13px 30px 13px 30px
+    font-size: 28px
+    text-transform: uppercase
+    letter-spacing: 0.1px
+    +semi
+  &-cards
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    max-width: 724px
+    padding-right: 57px
+    &-block
+      position: relative
+      padding-top: 96px
+      padding-bottom: 70px
+      flex-basis: 57.2%
+      display: flex
+      justify-content: flex-end
+      background-color: $benefits-cards-blockbg
+  // Список
+  &-list
+    padding-left: 35px
+    &-block
+      flex-basis: 42.8%
+      display: flex
+      justify-content: flex-start
+      padding-top: 90px
+      padding-bottom: 5px
+    &__item
+      margin-bottom: 58px
+      display: flex
+      &:nth-child(1)
+        .benefits-list__counter
+          margin-right: 17px
+          margin-left: 2px
+        .benefits-list__text
+          padding-top: 8px
+        .benefits-list__line
+          margin-top: 20px
+      &:nth-child(2)
+        .benefits-list__counter
+        .benefits-list__line
+          margin-top: 19px
+          margin-right: 15px
+        .benefits-list__text
+          margin-top: 7px
+      &:nth-child(3)
+        margin-bottom: 77px
+        .benefits-list__counter
+        .benefits-list__line
+          margin-top: 20px
+          margin-right: 16px
+        .benefits-list__text
+          margin-top: 8px
+      &:nth-child(4)
+        .benefits-list__counter
+        .benefits-list__line
+          margin-top: 17px
+        .benefits-list__text
+          margin-top: 6px
+          letter-spacing: 0.1px
+    &__counter
+      display: inline-block
+      font-size: 35px
+      text-transform: uppercase
+      +bold
+      font-weight: 1000
+      color: $benefits-list-counter
+      margin-right: 13px
+    &__line
+      display: inline-block
+      width: 31px
+      height: 2px
+      background-color: $benefits-list-line
+      margin-right: 15px
+    &__text
+      display: inline-block
+      font-size: 20px
+      line-height: 25px
+      color: $benefits-list-text
+      max-width: 340px
+      +semi
+// Карточки товара
+.benefit
+  width: 198px
+  height: 168px
+  background-color: #ffffff
+  margin-bottom: 35px
+  padding-top: 16px
+  text-align: center
+  &:nth-child(1)
+    .benefit-text
+      letter-spacing: 0.2px
+      padding-left: 2px
+  &:nth-child(2)
+    .benefit-text
+      padding-left: 4px
+  &:nth-child(3)
+    .benefit-text
+      padding-left: 4px
+    .benefit-img
+      padding-right: 3px
+  &:nth-child(4)
+    .benefit-text
+      padding-left: 7px
+      letter-spacing: 0.1px
+    .benefit-img
+      padding-left: 5px
+      width: 58px
+      margin-bottom: 20px
+  &:nth-child(5)
+    padding-top: 19px
+    .benefit-text
+      padding-left: 3px
+    .benefit-img
+      width: 59px
+      padding-left: 2px
+      margin-bottom: 17px
+  &:nth-child(6)
+    padding-top: 25px
+    .benefit-text
+      padding-left: 3px
+    .benefit-img
+      padding-right: 3px
+      margin-bottom: 11px
+  &-img
+    margin-bottom: 15px
+    height: 51px
+    width: 51px
+    margin-left: auto
+    margin-right: auto
+  &-text
+    font-size: 18px
+    line-height: 23px
+    +reg
+    color: $benefits-card-text
+    text-transform: uppercase
+    letter-spacing: 0.1px
+@media (max-width: 1200px)
+  .benefits
+    &-label
+      left: 100px
+    &-cards
+      &-block
+      padding-left: 50px
+      padding-right: 50px
+@media (max-width: 992px)
+  .benefits
+    &-cards
+      padding-left: 15px
+      padding-right: 15px
+      &-block
+    &-list
+      &-block
+@media (max-width: 768px)
+  .benefits
+    flex-wrap: wrap
+    &-label
+      left: 25%
+      right: 25%
+      text-align: center
+    &-cards
+      &-block
+        flex-basis: 100%
+        padding-left: 5%
+        padding-right: 5%
+    &-list
+      &-block
+        flex-basis: 100%
+        padding-left: 5%
+        padding-right: 5%
+@media (max-width: 576px)
+  .benefits
+    &-label
+      font-size: 22px
+      left: 15%
+      right: 15%
+    &-cards
+      padding: 0
+      justify-content: center
+      &-block
+        padding-left: 20%
+        padding-right: 20%
+    &-list
+      padding-left: 0
+      &-block

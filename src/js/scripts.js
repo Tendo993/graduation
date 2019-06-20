@@ -108,4 +108,6 @@ $(document).ready(function(e) {
     $('#service-description_6').css("display", "none"),
     $('#service-price-btn_6').css("display", "none");
   });
+  // Инициализация WOW.js
+  new WOW().init();
 });
