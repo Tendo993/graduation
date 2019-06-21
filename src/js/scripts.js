@@ -12,10 +12,9 @@ $(document).ready(function(e) {
     variableWidth: true,
     arrows: false,
     dots: true,
+    dotsClass: "hero-dots",
     autoplay: true,
-    // slide: 4,
     speed: 2000
-    // centerMode: true,
   });
   // Карточки услуг
   // Первая карточка
@@ -107,6 +106,26 @@ $(document).ready(function(e) {
     $('#service-title_6').css("display", "block"),
     $('#service-description_6').css("display", "none"),
     $('#service-price-btn_6').css("display", "none");
+  });
+  // reviews-slider
+  $('#reviews-slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    variableWidth: true,
+    arrows: false,
+    dots: true,
+    dotsClass: "reviews-slider-dots",
+    responsive: [
+      {
+        breakpoint: 1200,
+        // variableWidth: false,
+        settings: {
+          variableWidth: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          // centerMode: true,
+        }
+      }],
   });
   // Инициализация WOW.js
   new WOW().init();

@@ -411,6 +411,12 @@ img {
     max-width: 540px;
     width: 95%;
   }
+  .label {
+    font-size: 22px !important;
+    left: 15% !important;
+    right: 15% !important;
+    text-align: center !important;
+  }
 }
 
 .btn {
@@ -789,7 +795,7 @@ img {
   margin-bottom: 30px;
 }
 
-.slick-dots {
+.slick-dots, .reviews-slider-dots, .hero-dots {
   position: absolute;
   bottom: -25px;
   list-style: none;
@@ -800,7 +806,7 @@ img {
   width: 100%;
 }
 
-.slick-dots li {
+.slick-dots li, .reviews-slider-dots li, .hero-dots li {
   position: relative;
   display: inline-block;
   height: 20px;
@@ -810,7 +816,7 @@ img {
   cursor: pointer;
 }
 
-.slick-dots li button {
+.slick-dots li button, .reviews-slider-dots li button, .hero-dots li button {
   border: 0;
   background: transparent;
   display: block;
@@ -824,15 +830,15 @@ img {
   cursor: pointer;
 }
 
-.slick-dots li button:hover, .slick-dots li button:focus {
+.slick-dots li button:hover, .slick-dots li button:focus, .reviews-slider-dots li button:hover, .reviews-slider-dots li button:focus, .hero-dots li button:hover, .hero-dots li button:focus {
   outline: none;
 }
 
-.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+.slick-dots li button:hover:before, .slick-dots li button:focus:before, .reviews-slider-dots li button:hover:before, .reviews-slider-dots li button:focus:before, .hero-dots li button:hover:before, .hero-dots li button:focus:before {
   opacity: 1;
 }
 
-.slick-dots li button:before {
+.slick-dots li button:before, .reviews-slider-dots li button:before, .hero-dots li button:before {
   position: absolute;
   top: 0;
   left: 0;
@@ -849,7 +855,7 @@ img {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.slick-dots li.slick-active button:before {
+.slick-dots li.slick-active button:before, .reviews-slider-dots li.slick-active button:before, .hero-dots li.slick-active button:before {
   color: black;
   opacity: 0.75;
   background-color: #ffc800;
@@ -1229,20 +1235,20 @@ img {
   margin-bottom: 0px;
 }
 
-.slick-dots {
+.hero-dots {
   bottom: 45px;
 }
 
-.slick-dots li button {
+.hero-dots li button {
   padding: 0;
   background-color: #ffffff;
 }
 
-.slick-dots li button:before {
+.hero-dots li button:before {
   color: #ffffff;
 }
 
-.slick-dots li.slick-active button:before {
+.hero-dots li.slick-active button:before {
   background-color: #ffc800;
   color: #ffc800;
 }
@@ -1491,10 +1497,13 @@ img {
     padding-right: 0;
   }
   .service {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: none;
+    -webkit-filter: grayscale(0);
     width: 355px;
-  }
-  .service:hover {
-    display: none;
   }
   .service:nth-child(3n+3) .service-btn {
     left: 110px;
@@ -1585,7 +1594,7 @@ img {
 .benefits-cards-block {
   position: relative;
   padding-top: 96px;
-  padding-bottom: 70px;
+  padding-bottom: 62px;
   -ms-flex-preferred-size: 57.2%;
       flex-basis: 57.2%;
   display: -webkit-box;
@@ -1799,9 +1808,7 @@ img {
         flex-wrap: wrap;
   }
   .benefits-label {
-    left: 25%;
-    right: 25%;
-    text-align: center;
+    left: 65px;
   }
   .benefits-cards-block {
     -ms-flex-preferred-size: 100%;
@@ -1830,10 +1837,196 @@ img {
             justify-content: center;
   }
   .benefits-cards-block {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 19%;
+    padding-right: 19%;
   }
   .benefits-list {
     padding-left: 0;
+  }
+}
+
+.reviews {
+  width: 100vw;
+  background-color: #010101;
+  margin-bottom: 147px;
+}
+
+.reviews-container {
+  position: relative;
+}
+
+.reviews-label {
+  position: absolute;
+  top: -26px;
+  left: -32px;
+  padding: 14px 62px 12px 63px;
+  background-color: #ffc800;
+  color: #020202;
+  text-transform: uppercase;
+  font-size: 28px;
+  letter-spacing: 0.1px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-weight: 400;
+}
+
+.reviews-slider {
+  height: 584px;
+}
+
+.reviews-slider__item {
+  width: 575px;
+  margin-right: 20px;
+}
+
+.reviews-slider__item:nth-child(odd) {
+  padding-right: 107px;
+}
+
+.reviews-slider__item:nth-child(even) {
+  padding-left: 105px;
+  margin-right: 0;
+}
+
+.reviews-slider__item:nth-child(even) .review-title {
+  letter-spacing: 0px;
+}
+
+.reviews-slider__item:nth-child(even) .review-text {
+  letter-spacing: 0px;
+  margin-bottom: 25px;
+}
+
+.reviews-slider__item:nth-child(even) .review-vote {
+  margin-left: 5px;
+}
+
+.reviews-slider__item:nth-child(even) .review-like__img {
+  margin-right: 5px;
+}
+
+.reviews-slider__item:nth-child(even) .review-like__counter {
+  letter-spacing: 0.5px;
+  margin-right: 26px;
+}
+
+.reviews-slider-dots {
+  bottom: 49px;
+}
+
+.reviews-slider-dots li {
+  margin: 0 6px;
+}
+
+.reviews-slider-dots li button {
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.reviews-slider-dots li button:before {
+  color: #ffffff;
+}
+
+.reviews-slider-dots li.slick-active button:before {
+  background-color: #ffc800;
+  color: #ffc800;
+}
+
+.review {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 111px;
+}
+
+.review__img {
+  position: relative;
+  margin-right: 2px;
+  margin-bottom: 16px;
+}
+
+.review__quote {
+  position: absolute;
+  top: -2px;
+  right: 5px;
+}
+
+.review-title {
+  margin: 0;
+  color: #ffc800;
+  font-size: 20px;
+  padding-right: 1px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  margin-bottom: 17px;
+}
+
+.review-text {
+  color: #fffffd;
+  text-align: center;
+  font-size: 20px;
+  line-height: 28px;
+  margin-left: -3px;
+  letter-spacing: -0.05px;
+  margin-bottom: 24px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+}
+
+.review-vote {
+  margin-left: -3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.review-like__img {
+  margin-right: 7px;
+}
+
+.review-like__counter {
+  color: #fefbfb;
+  font-size: 14px;
+  line-height: 12px;
+  margin-right: 29px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+}
+
+.review-dislike__img {
+  margin-right: 8px;
+}
+
+.review-dislike__counter {
+  color: #fefbfb;
+  font-size: 14px;
+  line-height: 12px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  .reviews-label {
+    left: 50px;
+  }
+  .reviews-slider__item:nth-child(n) {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .review-text {
+    max-width: 460px;
   }
 }
