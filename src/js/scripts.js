@@ -9,7 +9,7 @@ $(document).ready(function(e) {
   $('#hero-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    variableWidth: true,
+    // variableWidth: true,
     arrows: false,
     dots: true,
     dotsClass: "hero-dots",

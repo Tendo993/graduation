@@ -1787,7 +1787,7 @@ img {
 
 @media (max-width: 1200px) {
   .benefits-label {
-    left: 100px;
+    left: 75px;
   }
   .benefits-cards {
     padding-left: 50px;
@@ -1846,7 +1846,7 @@ img {
 }
 
 .reviews {
-  width: 100vw;
+  width: 100%;
   background-color: #010101;
   margin-bottom: 147px;
 }
@@ -2028,5 +2028,165 @@ img {
   }
   .review-text {
     max-width: 460px;
+  }
+}
+
+.news {
+  background-color: #f1f1f1;
+  padding-bottom: 72px;
+}
+
+.news-container {
+  position: relative;
+}
+
+.news-label {
+  position: absolute;
+  background-color: #ffc800;
+  color: #020202;
+  top: -30px;
+  left: -32px;
+  padding: 13px 54px 13px 54px;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-weight: 400;
+}
+
+.news-block {
+  padding-top: 87px;
+  margin-bottom: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.news-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 18px 36px 17px 38px;
+  max-width: 300px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #ffc800;
+  color: #020202;
+  font-size: 20.5px;
+  letter-spacing: -0.1px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+}
+
+.new {
+  max-width: 377px;
+}
+
+.new:nth-child(2) .new-title, .new:nth-child(2) .new-text {
+  text-decoration: underline;
+}
+
+.new:nth-child(2) .new-title {
+  margin-right: 62px;
+}
+
+.new-img {
+  margin-bottom: 18px;
+}
+
+.new-title {
+  display: inline-block;
+  margin-left: -1px;
+  margin-right: 51px;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+  font-weight: 700;
+}
+
+.new-title-block {
+  margin-bottom: 12px;
+}
+
+.new-title-date {
+  display: inline-block;
+  position: relative;
+}
+
+.new-title__day {
+  position: absolute;
+  display: inline-block;
+  top: -19px;
+  left: 1px;
+  width: 25px;
+  height: 25px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  background-color: #ffc800;
+  color: #010101;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-weight: 400;
+}
+
+.new-title__month {
+  position: absolute;
+  display: inline-block;
+  top: -16px;
+  left: 26px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+}
+
+.new-text {
+  display: inline-block;
+  max-width: 325px;
+  margin-left: -1px;
+  color: #020202;
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 0.83;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  .news-label {
+    left: 50px;
+  }
+  .news-btn {
+    max-width: 280px;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+  }
+  .new {
+    max-width: 300px;
+  }
+  .new-title {
+    font-size: 16px;
+  }
+  .new-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 992px) {
+  .news-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .new {
+    margin-bottom: 80px;
   }
 }
