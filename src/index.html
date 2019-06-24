@@ -30,8 +30,8 @@
                     <a href="#services" class="header-navbar__item">Услуги</a>
                     <a href="#benefits" class="header-navbar__item">Цены</a>
                     <a href="#reviews" class="header-navbar__item">Отзывы</a>
-                    <a href="#" class="header-navbar__item">Новости</a>
-                    <a href="#" class="header-navbar__item">Контакты</a>
+                    <a href="#news" class="header-navbar__item">Новости</a>
+                    <a href="#footer" class="header-navbar__item">Контакты</a>
                 </div>
               </nav>
               <!-- /.header-navbar -->
@@ -287,7 +287,7 @@
   <!-- /.reviews -->
   <section class="news">
     <div class="container news-container">
-      <span class="news-label label">новости</span>
+      <span class="news-label label" id="news">новости</span>
       <!-- /.news-label -->
       <div class="news-block">
         <div class="new">
@@ -355,7 +355,75 @@
     <!-- /.container news-container -->
   </section>
   <!-- /.news -->
-
+  <section class="map-block">
+    <div class="map" id="map"></div>
+    <!-- /map -->
+    <form action="mail.php" method="POST" class="map-form" id="map-form">
+      <div class="map-form__title-block">
+        <span class="map-form__title map-form__title-first">оставьте</span>
+        <!-- /.map-form__title-first -->
+        <span class="map-form__title map-form__title-second">заявку</span>
+        <!-- /.map-form__title-second -->
+      </div>
+      <!-- /.map-form__title-block -->
+      <input type="text" name="user_name" class="map-form__input map-form__input-name" placeholder="Введите Ваше имя">
+      <input type="tel" name="user_phone" class="map-form__input map-form__input-tel phone" placeholder="Введите Ваш номер телефона">
+      <button type="submit" class="map-form__btn">заказать &#160;звонок</button>
+    </form>
+    <!-- /map-form -->
+  </section>
+  <!-- /map-block -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-address-block">
+        <div class="footer-address__img">
+          <img src="img/footer/placeholder.png" alt="placeholder">
+        </div>
+        <!-- /.address__img -->
+        <a href="map.html" class="footer-address">г. Москва, ул. Советская 48 корп. 3</a>
+        <!-- /.address -->
+      </div>
+      <!-- /.address-block -->
+      <div class="footer-social-block">
+        <div class="footer-social-img">
+          <a href="" class="footer-social-link"><img src="img/footer/instagram-logo.png" alt="instagram"></a>
+          <!-- /.social-link -->
+        </div>
+        <!-- /.social-img -->
+        <div class="footer-social-img">
+          <a href="https://vk.com/" class="footer-social-link"><img src="img/footer/vk-logo.png" alt="vk"></a>
+          <!-- /.social-link -->
+        </div>
+        <!-- /.social-img -->
+        <div class="footer-social-img">
+          <a href="" class="footer-social-link"><img src="img/footer/ok-logo.png" alt="odnoklassniki"></a>
+          <!-- /.social-link -->
+        </div>
+        <!-- /.social-img -->
+      </div>
+      <!-- /.social -->
+      <div class="footer-email-block">
+        <div class="footer-email-img">
+          <img src="img/footer/mail.png" alt="mail">
+        </div>
+        <!-- /.footer-email-img -->
+        <a href="" class="footer-email-address">infosanteh@gmail.com</a>
+        <!-- /.footer-email-address -->
+      </div>
+      <!-- /.footer-email -->
+      <div class="footer-tel-block">
+        <div class="footer-tel-img">
+          <img src="img/footer/phone.png" alt="phone">
+        </div>
+        <!-- /.footer-tel-img -->
+        <a href="tel:+7(863)342-22-21" class="footer-tel-phone"><span class="footer-tel-code">+7 (863) </span><span class="footer-tel-number"> 342-22-21</span></a>
+        <!-- /.footer-tel-phone -->
+      </div>
+      <!-- /.footer-tel-block --> 
+    </div>
+    <!-- /.container -->
+  </footer>
+  <!-- /.footer -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/wow.min.js"></script>

@@ -1,0 +1,125 @@
+.footer
+  background-color: $footer-bg-color
+  &-container
+    min-height: 134px
+    display: flex
+    align-items: center
+
+  &-address
+    display: inline-block
+    color: $footer-address-color
+    font-size: 20px
+    text-decoration: none
+    line-height: 28px
+    +reg
+    &-block
+      height: 25px
+      display: flex
+      align-items: center
+      margin-right: 153px
+    &__img
+      min-width: 15px
+      display: inline-block
+      margin-right: 13px
+      margin-top: 4px
+
+  &-social
+    &-block
+      height: 25px
+      margin-top: -4px
+      margin-right: 133px
+    &-img
+      min-width: 26px
+      display: inline-block
+      margin-right: 6px
+
+  &-email
+    &-block
+      margin-right: 49px
+    &-img
+      min-width: 20px
+      display: inline-block
+      margin-right: 5px
+      padding-top: 1px
+    &-address
+      display: inline-block
+      text-decoration: none
+      color: $footer-address-color
+      font-size: 18px
+      margin-top: -1px
+      +reg
+
+  &-tel
+    color: $footer-tel-color
+    &-block
+      position: relative
+      display: flex
+      align-items: center
+      &:before
+        content: ''
+        position: absolute
+        display: inline-block
+        color: #ffffff
+        background-color: #ffffff
+        width: 1px
+        height: 15px
+        top: 4px
+        left: -24px
+        opacity: 0.33
+    &-img
+      min-width: 18px
+      display: inline-block
+      margin-right: 6px
+    &-phone
+      display: inline-block
+      height: 25px
+      padding-top: 1px
+      text-decoration: none
+      color: $footer-tel-color
+      font-size: 18px
+      letter-spacing: -0.1px
+      +reg
+    &-code
+    &-number
+      font-weight: 700
+
+@media (max-width: 1200px)
+  .footer
+    &-container
+      display: flex
+      justify-content: space-between
+    &-address
+      &-block
+        margin-right: 0
+    &-social
+      &-block
+        margin-right: 0
+    &-email
+      &-block
+@media (max-width: 992px)
+  .footer
+    &-container
+      flex-direction: column
+      align-items: flex-start
+      padding-left: 10%
+      padding-top: 25px
+      padding-bottom: 25px
+    &-address
+      &-block
+        margin-bottom: 15px
+    &-social
+      &-block
+        margin-bottom: 15px
+    &-email
+      &-block
+        margin-bottom: 15px
+    &-tel
+      &-block
+        &:before
+          display: none
+@media (max-width: 768px)
+  .footer
+    &-container
+      padding-left: 10px
+    &-address
+      font-size: 16px

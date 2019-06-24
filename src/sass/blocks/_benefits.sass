@@ -30,7 +30,6 @@
   &-list
     padding-left: 35px
     &-block
-      flex-basis: 42.8%
       display: flex
       justify-content: flex-start
       padding-top: 90px
@@ -176,6 +175,14 @@
         flex-basis: 100%
         padding-left: 5%
         padding-right: 5%
+@media (max-width: 650px)
+  .benefits
+    &-cards
+      &-block
+        flex-direction: column
+        align-items: center
+  .benefit
+    margin-right: 5px
 @media (max-width: 576px)
   .benefits
     &-label
@@ -186,8 +193,6 @@
       padding: 0
       justify-content: center
       &-block
-        padding-left: 19%
-        padding-right: 19%
     &-list
       padding-left: 0
       &-block
