@@ -369,6 +369,7 @@ template {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: none;
 }
 
 body {
@@ -986,16 +987,20 @@ img {
 .header-tel {
   display: inline-block;
   margin-right: 42px;
+  text-decoration: none;
+  color: #000000;
 }
 
 .header-tel__number {
   display: inline-block;
   padding-bottom: 5px;
   letter-spacing: 0.05px;
+  text-decoration: none;
   font-family: 'Proxima Nova Bold', sans-serif;
   font-weight: 700;
   font-size: 17.5px;
   letter-spacing: 0px;
+  color: #000000;
 }
 
 .header-tel__code {
@@ -1867,6 +1872,10 @@ img {
   width: 100%;
   background-color: #010101;
   margin-bottom: 147px;
+}
+
+.reviews * {
+  outline: none;
 }
 
 .reviews-container {
