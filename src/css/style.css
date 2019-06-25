@@ -2278,6 +2278,7 @@ img {
   width: 305px;
   margin-left: -4px;
   padding-bottom: 5px;
+  outline: none;
   border: none;
   border-bottom: 1px solid #000000;
   color: #020202;
@@ -2414,6 +2415,15 @@ img {
   margin-right: 6px;
 }
 
+.footer-social-img:hover {
+  margin-right: 2px;
+}
+
+.footer-social-img img:hover {
+  border: 2px solid gold;
+  border-radius: 50%;
+}
+
 .footer-email-block {
   margin-right: 49px;
 }
@@ -2534,5 +2544,119 @@ img {
   }
   .footer-address {
     font-size: 16px;
+  }
+}
+
+.modal {
+  position: fixed;
+  display: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal_active {
+  display: block;
+}
+
+.modal-form {
+  z-index: 20;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 140px;
+  left: 50%;
+  margin-left: -198px;
+  width: 397px;
+  height: 385px;
+  padding-top: 48px;
+  background-color: #fff;
+  -webkit-box-shadow: 4px 0 16px rgba(0, 0, 0, 0.8);
+          box-shadow: 4px 0 16px rgba(0, 0, 0, 0.8);
+}
+
+.modal-form__close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-form__title {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-weight: 700;
+}
+
+.modal-form__title-block {
+  margin-left: -1px;
+  margin-bottom: 42px;
+}
+
+.modal-form__title-first {
+  display: inline-block;
+  color: #030303;
+}
+
+.modal-form__title-second {
+  display: inline-block;
+  color: #ffc800;
+}
+
+.modal-form__input {
+  display: block;
+  width: 305px;
+  margin-left: -4px;
+  padding-bottom: 5px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000000;
+  color: #020202;
+  font-size: 18px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.modal-form__input-name {
+  margin-bottom: 37px;
+}
+
+.modal-form__input-tel {
+  padding-bottom: 4px;
+  margin-bottom: 65px;
+}
+
+.modal-form__btn {
+  background-color: #ffc800;
+  color: #020202;
+  text-decoration: none;
+  border: none;
+  padding: 18px 58px 17px 57px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+}
+
+@media (max-width: 400px) {
+  .modal-form {
+    max-width: 100vw;
+    left: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

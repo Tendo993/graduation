@@ -44,7 +44,7 @@
                       </span>
                     </div>
                     <!-- /.header-navbar -->
-                    <a href="#" class="header-btn btn">Заказать звонок</a>
+                    <a href="#" class="header-btn btn" id="navbar-button">Заказать звонок</a>
                     <!-- /.header-btn -->
               </div>
               <!-- /.header-contacts -->
@@ -53,6 +53,7 @@
         <!-- /.header-block -->
       <!-- /.container -->
     </header>
+
     <!-- /.header -->
     <div class="hero">
       <div class="hero-slider" id="hero-slider">
@@ -95,6 +96,7 @@
       </div>
     </div>
   </main>
+
   <section class="services">
     <div class="container">
       <div class="services-block">
@@ -160,6 +162,7 @@
     <!-- /.container -->
   </section>
   <!-- /.services -->
+
   <section class="benefits">
     <div class="benefits-cards-block">
       <span class="benefits-label label" id="benefits">почему мы?</span>
@@ -225,6 +228,8 @@
     </div>
     <!-- /.benefits-list-block -->
   </section>
+  <!-- /benefits -->
+
   <section class="reviews">
     <div class="container reviews-container">
       <span class="reviews-label label" id="reviews">отзывы</span>
@@ -285,6 +290,7 @@
     <!-- /.container -->
   </section>
   <!-- /.reviews -->
+
   <section class="news">
     <div class="container news-container">
       <span class="news-label label" id="news">новости</span>
@@ -355,6 +361,7 @@
     <!-- /.container news-container -->
   </section>
   <!-- /.news -->
+
   <section class="map-block">
     <div class="map" id="map"></div>
     <!-- /map -->
@@ -373,7 +380,8 @@
     <!-- /map-form -->
   </section>
   <!-- /map-block -->
-  <footer class="footer">
+
+  <footer class="footer" id="footer">
     <div class="container footer-container">
       <div class="footer-address-block">
         <div class="footer-address__img">
@@ -386,7 +394,7 @@
       <!-- /.address-block -->
       <div class="footer-social-block">
         <div class="footer-social-img">
-          <a href="" class="footer-social-link"><img src="img/footer/instagram-logo.png" alt="instagram"></a>
+          <a href="https://www.instagram.com" class="footer-social-link"><img src="img/footer/instagram-logo.png" alt="instagram"></a>
           <!-- /.social-link -->
         </div>
         <!-- /.social-img -->
@@ -396,7 +404,7 @@
         </div>
         <!-- /.social-img -->
         <div class="footer-social-img">
-          <a href="" class="footer-social-link"><img src="img/footer/ok-logo.png" alt="odnoklassniki"></a>
+          <a href="https://ok.ru" class="footer-social-link"><img src="img/footer/ok-logo.png" alt="odnoklassniki"></a>
           <!-- /.social-link -->
         </div>
         <!-- /.social-img -->
@@ -407,7 +415,7 @@
           <img src="img/footer/mail.png" alt="mail">
         </div>
         <!-- /.footer-email-img -->
-        <a href="" class="footer-email-address">infosanteh@gmail.com</a>
+        <a href="mailto:infosanteh@gmail.com" class="footer-email-address">infosanteh@gmail.com</a>
         <!-- /.footer-email-address -->
       </div>
       <!-- /.footer-email -->
@@ -424,6 +432,26 @@
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
+
+  <!-- modal -->
+  <div class="modal" id="modal">
+    <div class="modal-bg"></div>
+    <form action="mail.php" method="POST" class="modal-form" id="modal-form">
+      <div class="modal-form__close" id="modal-close"><span>Закрыть</span></div>
+      <div class="modal-form__title-block">
+        <span class="modal-form__title modal-form__title-first">оставьте</span>
+        <!-- /.modal-form__title-first -->
+        <span class="modal-form__title modal-form__title-second">заявку</span>
+        <!-- /.modal-form__title-second -->
+      </div>
+      <!-- /.modal-form__title-block -->
+      <input type="text" name="user_name" class="modal-form__input modal-form__input-name" placeholder="Введите Ваше имя">
+      <input type="tel" name="user_phone" class="modal-form__input modal-form__input-tel phone" placeholder="Введите Ваш номер телефона">
+      <button type="submit" class="modal-form__btn">заказать &#160;звонок</button>
+    </form>
+  </div>
+  <!-- /modal -->
+
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/wow.min.js"></script>

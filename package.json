@@ -1,0 +1,28 @@
+{
+  "name": "graduation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tendo993/graduation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tendo993/graduation/issues"
+  },
+  "homepage": "https://github.com/Tendo993/graduation#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-tinypng-compress": "^1.2.5"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1"
+  }
+}
