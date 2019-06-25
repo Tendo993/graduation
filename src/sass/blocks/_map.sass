@@ -87,10 +87,30 @@
     &-form
       order: 0
       position: relative
-      flex-basis: 100%
+      // flex-basis: 100%
+      width: 397px
+      height: 385px
       left: 0
       top: 0
-
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 15px
+      margin-top: 15px
+@media (max-width: 576px)
+  .map
+    &-block
+      padding-right: 5%
+      padding-left: 5%
+    &-form
+      width: 100%
+      max-width: 397px
+      &__title
+      &__input
+        width: 90%
+      &__btn
+        width: 90%
+        padding-right: 15px
+        padding-left: 15px
 .map1
   height: 666px
   width: 100vw

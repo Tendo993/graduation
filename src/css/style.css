@@ -2349,10 +2349,33 @@ img {
         -ms-flex-order: 0;
             order: 0;
     position: relative;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    width: 397px;
+    height: 385px;
     left: 0;
     top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .map-block {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  .map-form {
+    width: 100%;
+    max-width: 397px;
+  }
+  .map-form__input {
+    width: 90%;
+  }
+  .map-form__btn {
+    width: 90%;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
@@ -2529,6 +2552,12 @@ img {
   }
   .footer-social-block {
     margin-bottom: 15px;
+  }
+  .footer-social-img:hover {
+    margin-right: 6px;
+  }
+  .footer-social-img img:hover {
+    border: 0px;
   }
   .footer-email-block {
     margin-bottom: 15px;
