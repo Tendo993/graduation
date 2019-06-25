@@ -393,6 +393,9 @@ img {
 }
 
 @media (max-width: 992px) {
+  * {
+    outline: none !important;
+  }
   .container {
     width: 95%;
     max-width: 960px;
